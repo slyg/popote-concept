@@ -1,10 +1,11 @@
 {% extends 'layout.html' %}
 
 {% block body %}
-<div id="w-home" data-role="page" data-theme="a">	
+<div id="home" data-role="page" data-theme="a">	
 	
 	<div data-role="header">
 		<h1>slyG3873</h1>
+		<a href="/logout" class="ui-btn-right"><i class="icon-signout"></i></a>
 	</div>
 	
 	<div data-role="footer" data-position="fixed">
@@ -20,6 +21,7 @@
 	
 	<div data-role="content">
 		<ul data-role="listview">
+			<li data-role="list-divider" role="heading">Les dernières popotes</li>
 			<li>
 				<a href="/popote">
 					<h3>Ratatouille riz curry</h3>

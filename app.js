@@ -62,11 +62,15 @@
 	});
 	
 	app.post('/authenticate', function(req, res){
-		res.redirect('/home');
+		res.redirect('/home', {nav : 'home'});
 	});
 	
 	app.get('/home', function(req, res){
-		res.render('home', {});
+		res.render('home', {nav : 'home'});
+	});
+
+	app.get('/logout', function(req, res){
+		res.redirect('/login');
 	});
 	
 	app.get('/metrolines', function(req, res){
