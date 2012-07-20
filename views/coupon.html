@@ -1,0 +1,67 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div id="coupon" data-role="page" data-theme="a">
+
+	<div data-role="header">
+		<a href="/home" data-icon="home">Accueil</a>
+		<h1>Votre coupon</h1>
+	</div>
+
+	<div data-role="content">
+		
+		<ul data-inset="true" data-role="listview">
+			<li data-role="list-divider" role="heading"><h3><i class="icon-check"></i> R&eacute;servation effectu&eacute;e</h3></li>
+			<li>
+				Num&eacute;ro de coupon *
+				<br />
+				<span class="bf">BX4A</span>
+				<br />
+				<span class="sf grayc">A donner au cuisiner pour recevoir votre portion</span>
+			</li>
+			<li>
+				Pr&eacute;parez votre monnaie
+				<br />
+				<span class="bf">6 &euro;</span>
+				<br />
+				<span class="sf grayc">(2 portions &agrave; 3,5&euro;/portion)</span>
+			</li>
+			<li>
+				<h3>Salade pommes roquette</h3>
+				<table>
+					<tr>
+						<td><i class="icon-time"></i></td>
+						<td>19h</td>
+					</tr>
+					<tr>
+						<td><i class="icon-calendar"></i></td>
+						<td>Jeudi 20 Mai</td>
+					</tr>
+					<tr>
+						<td><i class="icon-map-marker"></i></td>
+						<td>M&eacute;tro Lamarck-Caulaincourt</td>
+					</tr>
+					<tr>
+						<td><i class="icon-user"></i></td>
+						<td>Malika18</td>
+					</tr>
+				</table>
+			</li>
+			<li>Pr&eacute;cision de Malika18 : <br /><span class="grayc">Je me placerai pr&egrave;s du G20, dans le petit square. Soyez &agrave; l'heure svp ;) !</span></li>
+			<li>
+			
+				<span class="sf">Partagez votre commande</span>
+				<br />
+				<span>
+				<a href="#" class="nolink"><i class="icon-facebook-sign bf facebookColor"></i></a>
+				<a href="#" class="nolink"><i class="icon-twitter-sign bf twitterColor"></i></a>
+				</span>
+			</li>
+		</ul>
+		<p class="sf grayc"><i class="icon-asterisk"></i> Un rappel de ces informations vous a &eacute;t&eacute; transmis par e-mail.</p>
+
+	</div>
+</div>
+
+{% endblock %}

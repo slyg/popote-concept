@@ -1,0 +1,75 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<div id="home" data-role="page" data-theme="a">
+
+	<div data-role="header" data-position="fixed" class="header">
+		<p class="tac">Bienvenue, slyg3873</p>
+		<ul data-role="listview">
+			<li>
+				<a href="/metrolines">
+					<span class="ui-li-thumb"><i class="icon-search"></i></span>
+					<h3>Chercher une popote</h3>
+					<p style="white-space: normal;">Trouvez votre repas sur votre ligne de m&eacute;tro</p>
+				</a>
+			</li>
+			<li>
+				<a href="/popote/new">
+					<span class="ui-li-thumb"><i class="icon-thumbs-up"></i></span>
+					<h3>Cr&eacute;er une popote</h3>
+					<p style="white-space: normal;">Gagnez de l'argent en distribuant vos plats</p>
+				</a>
+			</li>
+			<li data-role="list-divider" role="heading" style="border-top: 10px solid gray;">Les prochaines popotes</li>
+		</ul>
+	</div>
+
+	<div data-role="content">
+		<ul data-role="listview">
+			<li>
+				<a href="/popote">
+					<h3>Ratatouille riz curry</h3>
+					<p><i class="icon-map-marker"></i>Mairie du 18&egrave;me (12) / <i class="icon-time"></i>19h / <i class="icon-user"></i> Steph</p>
+					<div class="flr sf"><span class="price">4&euro;/portion</span></div>
+				</a>
+			</li>
+			<li>
+				<a href="/popote">
+					<h3>Pates au saumon</h3>
+					<p><i class="icon-map-marker"></i>Convention (12) / <i class="icon-time"></i>19h / <i class="icon-user"></i> Boubou</p>
+					<div class="flr sf"><span class="price">4.5&euro;/portion</span></div>
+				</a>
+			</li>
+			<li>
+				<a href="/popote">
+					<h3>Salade Tha&iuml;</h3>
+					<p><i class="icon-map-marker"></i>R&eacute;publique (3, 5, 8, 9 et 11) / <i class="icon-time"></i>19h / <i class="icon-user"></i> Marc0</p>
+					<div class="flr sf"><span class="price">3.5&euro;/portion</span></div>
+				</a>
+			</li>
+			<li>
+				<a href="/popote">
+					<h3>Ratatouille riz curry</h3>
+					<p><i class="icon-map-marker"></i>Mairie du 18&egrave;me (12) / <i class="icon-time"></i>19h / <i class="icon-user"></i> Steph</p>
+					<div class="flr sf"><span class="price">4&euro;/portion</span></div>
+				</a>
+			</li>
+			<li>
+				<a href="/popote">
+					<h3>Pates au saumon</h3>
+					<p><i class="icon-map-marker"></i>Convention (12) / <i class="icon-time"></i>19h / <i class="icon-user"></i> Boubou</p>
+					<div class="flr sf"><span class="price">4.5&euro;/portion</span></div>
+				</a>
+			</li>
+			<li>
+				<a href="/popote">
+					<h3>Salade Tha&iuml;</h3>
+					<p><i class="icon-map-marker"></i>R&eacute;publique (3, 5, 8, 9 et 11) / <i class="icon-time"></i>19h / <i class="icon-user"></i> Marc0</p>
+					<div class="flr sf"><span class="price">3.5&euro;/portion</span></div>
+				</a>
+			</li>
+		</ul>
+	</div>
+	
+</div>
+{% endblock %}

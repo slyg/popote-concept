@@ -1,0 +1,45 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<div id="concept" data-role="page" data-theme="a">
+		
+	<div data-role="header">
+		<h1>Qu'est-ce ?</h1>
+	</div><!-- /header -->
+	
+	<div data-role="content">
+	
+		<p>R&eacute;cup&eacute;rez votre popote sur votre ligne de m&eacute;tro.</p>
+		
+		<ol>
+		
+			<li>Choisissez un plat distribu&eacute; pr&egrave;s d'une station de m&eacute;tro</li>
+			<br />
+			<li>S&eacute;lectionnez un nombre de portions</li>
+			<br />
+			<li>R&eacute;cup&eacute;rez quelques heures plus tard &agrave; la station</li>
+			<br />
+			<li>R&eacute;glez le montant</li>
+			<br />
+			<li>Apr&egrave;s avoir mang&eacute;, notez les talents de votre cuisinier !</li>
+		
+		</ol>
+		
+		<br /><br />
+		
+		<ul data-inset="false" data-role="listview">
+			<li data-role="list-divider" role="heading">Cr&eacute;ez-vous un compte</li>
+			<li>
+				<form method="post" action="authenticate">
+					<label><input type="email" placeholder="Email" /></label>
+					<label><input type="password" placeholder="Mot de passe"></label>
+					<label><input type="text" placeholder="Pseudo" /></label>
+					<button type="submit" data-theme="b" data-role="button">C'est parti !</button>
+				</form>
+			</li>
+		</ul>
+	
+	</div>
+	
+</div>
+{% endblock %}

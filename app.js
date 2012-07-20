@@ -1,43 +1,107 @@
-var express = require('express'),
-    swig = require('swig'),
-    app = express.createServer();
+// ---------------------
+// | Main dependencies |
+// ---------------------
 
-// express configuration
-app.configure(function(){
-    app.use(express.methodOverride());
-    app.use(express.bodyParser());
-    app.use(app.router);
-});
+	var express = require('express'),
+	    swig = require('swig'),
+	    app = express.createServer();
 
-app.configure('development', function(){
-    app.use(express.static(__dirname + '/public'));
-    app.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
-});
+// -------------------------
+// | express configuration |
+// -------------------------
 
-app.configure('production', function(){
-  var oneYear = 31557600000;
-  app.use(express.static(__dirname + '/public', { maxAge: oneYear }));
-  app.use(express.errorHandler());
-});
+	app.configure(function(){
+	    app.use(express.methodOverride());
+	    app.use(express.bodyParser());
+	    app.use(app.router);
+	});
+	
+	app.configure('development', function(){
+	    app.use(express.static(__dirname + '/static'));
+	    app.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
+	});
+	
+	app.configure('production', function(){
+	  var oneYear = 31557600000;
+	  app.use(express.static(__dirname + '/static', { maxAge: oneYear }));
+	  app.use(express.errorHandler());
+	});
+	
+	// Register Swig as the template renderer
+	app.register('.html', swig);
+	app.set('view engine', 'html');
+	
+	// Set up your views directory
+	swig.init({ 
+	    root: __dirname + '/views', 
+	    allowErrors: true // allows errors to be thrown and caught by express 
+	});
+	
+	// Same for Express
+	app.set('views', __dirname + '/views');
+	
+	// Setting this to false allows to properly use {% extends %} and {% block %} tags
+	app.set('view options', { layout: false });
+	
 
-// Register Swig as the template renderer
-app.register('.html', swig);
-app.set('view engine', 'html');
+// -------------------------
+// | Main prototype Routes |
+// -------------------------
 
-// Set up your views directory
-swig.init({
-    root: '/',
-    allowErrors: true // allows errors to be thrown and caught by express
-});
-app.set('views', 'views/');
 
-// Setting this to false allows to properly use {% extends %} and {% block %} tags
-app.set('view options', { layout: false });
+	app.get('/', function (req, res) {
+	    res.redirect('/login');
+	});
+	
+	app.get('/concept', function (req, res) {
+	    res.render('concept', {});
+	});
+		
+	app.get('/login', function(req, res){
+	    res.render('login', {});
+	});
+	
+	app.post('/authenticate', function(req, res){
+		res.redirect('/home');
+	});
+	
+	app.get('/home', function(req, res){
+		res.render('home', {});
+	});
+	
+	app.get('/metrolines', function(req, res){
+	    res.render('metrolines', {});
+	});
+	
+	app.get('/popotes', function(req, res){
+	    res.render('popotes', {});
+	});
+	
+	app.get('/popote', function(req, res){
+	    res.render('popote', {});
+	});
+	
+	app.post('/coupon/new', function(req, res){
+		res.redirect('/coupon');
+	});
+	
+	app.get('/coupon', function(req, res){
+	    res.render('coupon', {});
+	});
 
-// rendering root
-app.get('/', function (req, res) {
-    res.render('layout.html', { foo: 'bar' });
-});
 
-// listen to port 3000
-app.listen(3000);
+// -------------------------
+// | Home wireframe routes |
+// -------------------------
+
+
+	app.get('/wireframe', 		function(req, res){res.redirect('/wireframe/home');});
+	app.get('/wireframe/home',	function(req, res){res.render('w-home', {nav : "home"});});
+
+
+// -----------------------
+// | listen to port 3000 |
+// -----------------------
+
+	console.log('listening to localhost:4000');
+	app.listen(4000);
