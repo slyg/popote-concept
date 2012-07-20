@@ -90,15 +90,6 @@
 	});
 
 
-// -------------------------
-// | Home wireframe routes |
-// -------------------------
-
-
-	app.get('/wireframe', 		function(req, res){res.redirect('/wireframe/home');});
-	app.get('/wireframe/home',	function(req, res){res.render('w-home', {nav : "home"});});
-
-
 // -----------------------
 // | listen to port 3000 |
 // -----------------------

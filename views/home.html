@@ -1,29 +1,23 @@
 {% extends 'layout.html' %}
 
 {% block body %}
-<div id="home" data-role="page" data-theme="a">
-
-	<div data-role="header" data-position="fixed" class="header">
-		<p class="tac">Bienvenue, slyg3873</p>
-		<ul data-role="listview">
-			<li>
-				<a href="/metrolines">
-					<span class="ui-li-thumb"><i class="icon-search"></i></span>
-					<h3>Chercher une popote</h3>
-					<p style="white-space: normal;">Trouvez votre repas sur votre ligne de m&eacute;tro</p>
-				</a>
-			</li>
-			<li>
-				<a href="/popote/new">
-					<span class="ui-li-thumb"><i class="icon-thumbs-up"></i></span>
-					<h3>Cr&eacute;er une popote</h3>
-					<p style="white-space: normal;">Gagnez de l'argent en distribuant vos plats</p>
-				</a>
-			</li>
-			<li data-role="list-divider" role="heading" style="border-top: 10px solid gray;">Les prochaines popotes</li>
-		</ul>
+<div id="w-home" data-role="page" data-theme="a">	
+	
+	<div data-role="header">
+		<h1>slyG3873</h1>
 	</div>
-
+	
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar" role="navigation" data-icon-pos="top">
+			<ul>
+				<li><a href="/home" class="{% if nav == 'home' %}ui-btn-active{% endif %}"><i style="font-size: 30px;" class="icon-home"></i></a></li>
+				<li><a href="/metrolines" class="{% if nav == 'search' %}ui-btn-active{% endif %}"><i style="font-size: 30px;" class="icon-search"></i></a></li>
+				<li><a href="/popote/new" class="{% if nav == 'create' %}ui-btn-active{% endif %}"><i style="font-size: 30px;" class="icon-pencil"></i></a></li>
+				<li><a href="/profile" class="{% if nav == 'profile' %}ui-btn-active{% endif %}"><i style="font-size: 30px;" class="icon-user"></i></a></li>
+			</ul>
+		</div>
+	</div>
+	
 	<div data-role="content">
 		<ul data-role="listview">
 			<li>
