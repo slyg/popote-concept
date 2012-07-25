@@ -1,8 +1,8 @@
 {
   "version": "0.0.1",
   "dependencies" : {
-    "express"   : "<=2.5.9",
-    "swig"      :  "*"
+    "express"   : "<= 2.5.9",
+    "swig"      : ">= 0.11.2"
   },
   "engine": {
     "node": ">=0.8"
