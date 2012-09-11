@@ -1,3 +1,6 @@
 conception/*
 *.swp
 *.DS_Store
+static/img/.DS_Store
+
+static/img/src/.DS_Store
