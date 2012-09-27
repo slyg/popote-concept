@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg height="581" version="1.1" width="1244" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#ffffff" height="168" stroke="#ffffff" stroke-width="1" width="192" x="430" y="398"/>
+<rect fill="none" height="168" stroke="#000000" stroke-width="1" width="192" x="430" y="398"/>
+<text font-family="Lucida Grande" font-size="13" x="504" y="412">
+Course</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="192" x="430" y="422"/>
+<text font-family="Lucida Grande" font-size="13" x="434" y="437">
+date_begin : Integer</text>
+<text font-family="Lucida Grande" font-size="13" x="434" y="454">
+date_end : Integer</text>
+<text font-family="Lucida Grande" font-size="13" x="434" y="471">
+comment : String</text>
+<text font-family="Lucida Grande" font-size="13" x="434" y="488">
+max_portions : Integer</text>
+<text font-family="Lucida Grande" font-size="13" x="434" y="505">
+reserved_portions : Integer</text>
+<text font-family="Lucida Grande" font-size="13" x="434" y="522">
+id_recipe : Integer</text>
+<text font-family="Lucida Grande" font-size="13" x="434" y="539">
+id_location : Integer</text>
+<rect fill="#ffffff" height="152" stroke="#ffffff" stroke-width="1" width="192" x="430" y="110"/>
+<rect fill="none" height="152" stroke="#000000" stroke-width="1" width="192" x="430" y="110"/>
+<text font-family="Lucida Grande" font-size="13" x="505" y="124">
+Recipe</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="192" x="430" y="134"/>
+<text font-family="Lucida Grande" font-size="13" x="434" y="149">
+title : String</text>
+<text font-family="Lucida Grande" font-size="13" x="434" y="166">
+ingredients : String</text>
+<text font-family="Lucida Grande" font-size="13" x="434" y="183">
+id_member : Integer</text>
+<rect fill="#ffffff" height="168" stroke="#ffffff" stroke-width="1" width="200" x="102" y="398"/>
+<rect fill="none" height="168" stroke="#000000" stroke-width="1" width="200" x="102" y="398"/>
+<text font-family="Lucida Grande" font-size="13" x="165" y="412">
+Reservation</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="200" x="102" y="422"/>
+<text font-family="Lucida Grande" font-size="13" x="106" y="437">
+coupon : String</text>
+<text font-family="Lucida Grande" font-size="13" x="106" y="454">
+portions : Integer</text>
+<text font-family="Lucida Grande" font-size="13" x="106" y="471">
+owner : Member</text>
+<text font-family="Lucida Grande" font-size="13" x="106" y="488">
+id_course : Integer</text>
+<polyline fill="none" points="302,440 430,440" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="418" x2="430" y1="447" y2="440"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="418" x2="430" y1="433" y2="440"/>
+<text font-family="Lucida Grande" font-size="13" x="332" y="422">
+is made on</text>
+<text font-family="Lucida Grande" font-size="13" x="306" y="435">
+0..*</text>
+<text font-family="Lucida Grande" font-size="13" x="411" y="435">
+1</text>
+<rect fill="#ffffff" height="152" stroke="#ffffff" stroke-width="1" width="200" x="102" y="110"/>
+<rect fill="none" height="152" stroke="#000000" stroke-width="1" width="200" x="102" y="110"/>
+<text font-family="Lucida Grande" font-size="13" x="177" y="124">
+Member</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="200" x="102" y="134"/>
+<text font-family="Lucida Grande" font-size="13" x="106" y="149">
+pseudo : String</text>
+<text font-family="Lucida Grande" font-size="13" x="106" y="166">
+email : String</text>
+<text font-family="Lucida Grande" font-size="13" x="106" y="183">
+password : Integer</text>
+<text font-family="Lucida Grande" font-size="13" x="106" y="200">
+customer_reputation : Integer</text>
+<text font-family="Lucida Grande" font-size="13" x="106" y="217">
+cook_reputation : Integer</text>
+<polyline fill="none" points="198,262 198,398" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="191" x2="198" y1="386" y2="398"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="205" x2="198" y1="386" y2="398"/>
+<text font-family="Lucida Grande" font-size="13" x="107" y="335">
+takes</text>
+<text font-family="Lucida Grande" font-size="13" x="162" y="289">
+1..*</text>
+<text font-family="Lucida Grande" font-size="13" x="158" y="379">
+0..*</text>
+<rect fill="#ffffff" height="80" stroke="#ffffff" stroke-width="1" width="208" x="1022" y="246"/>
+<rect fill="none" height="80" stroke="#000000" stroke-width="1" width="208" x="1022" y="246"/>
+<text font-family="Lucida Grande" font-size="13" x="1082" y="260">
+Metro_station</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="208" x="1022" y="270"/>
+<text font-family="Lucida Grande" font-size="13" x="1026" y="285">
+name : String</text>
+<text font-family="Lucida Grande" font-size="13" x="1026" y="302">
+metro_lines</text>
+<polyline fill="none" points="622,438 750,438" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="738" x2="750" y1="445" y2="438"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="738" x2="750" y1="431" y2="438"/>
+<text font-family="Lucida Grande" font-size="13" x="646" y="411">
+happens at</text>
+<text font-family="Lucida Grande" font-size="13" x="626" y="433">
+0..*</text>
+<text font-family="Lucida Grande" font-size="13" x="742" y="431">
+1</text>
+<rect fill="#ffffff" height="67" stroke="#ffffff" stroke-width="1" width="208" x="1022" y="110"/>
+<rect fill="none" height="67" stroke="#000000" stroke-width="1" width="208" x="1022" y="110"/>
+<text font-family="Lucida Grande" font-size="13" x="1093" y="124">
+Metro_line</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="208" x="1022" y="134"/>
+<text font-family="Lucida Grande" font-size="13" x="1026" y="149">
+number : String</text>
+<text font-family="Lucida Grande" font-size="13" x="1026" y="166">
+metro_stations</text>
+<polyline fill="none" points="1126,177 1126,246" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="1119" x2="1126" y1="234" y2="246"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="1133" x2="1126" y1="234" y2="246"/>
+<text font-family="Lucida Grande" font-size="13" x="1035" y="221">
+owns</text>
+<text font-family="Lucida Grande" font-size="13" x="1098" y="206">
+1..*</text>
+<text font-family="Lucida Grande" font-size="13" x="1098" y="237">
+1..*</text>
+<polyline fill="none" points="526,398 526,262" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="533" x2="526" y1="274" y2="262"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="519" x2="526" y1="274" y2="262"/>
+<text font-family="Lucida Grande" font-size="13" x="418" y="337">
+is cooked with</text>
+<text font-family="Lucida Grande" font-size="13" x="498" y="381">
+0..*</text>
+<text font-family="Lucida Grande" font-size="13" x="505" y="296">
+1</text>
+<polyline fill="none" points="430,150 302,150" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="314" x2="302" y1="143" y2="150"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="314" x2="302" y1="157" y2="150"/>
+<text font-family="Lucida Grande" font-size="13" x="330" y="106">
+belongs to</text>
+<text font-family="Lucida Grande" font-size="13" x="404" y="145">
+0..*</text>
+<text font-family="Lucida Grande" font-size="13" x="313" y="145">
+1</text>
+<rect fill="#ffffff" height="169" stroke="#ffffff" stroke-width="1" width="480" x="750" y="398"/>
+<rect fill="none" height="169" stroke="#000000" stroke-width="1" width="480" x="750" y="398"/>
+<text font-family="Lucida Grande" font-size="13" x="963" y="412">
+Location</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="480" x="750" y="422"/>
+<text font-family="Lucida Grande" font-size="13" x="754" y="437">
+type : String</text>
+<text font-family="Lucida Grande" font-size="13" x="754" y="454">
+id_metro_station : String</text>
+<text font-family="Lucida Grande" font-size="13" x="754" y="471">
+id_delivery_address : String</text>
+<polyline fill="none" points="1126,398 1126,326" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="1133" x2="1126" y1="338" y2="326"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="1119" x2="1126" y1="338" y2="326"/>
+<text font-family="Lucida Grande" font-size="13" x="1035" y="367">
+is nearby</text>
+<text font-family="Lucida Grande" font-size="13" x="1098" y="381">
+0..*</text>
+<text font-family="Lucida Grande" font-size="13" x="1105" y="353">
+1</text>
+<rect fill="#ffffff" height="216" stroke="#ffffff" stroke-width="1" width="208" x="750" y="110"/>
+<rect fill="none" height="216" stroke="#000000" stroke-width="1" width="208" x="750" y="110"/>
+<text font-family="Lucida Grande" font-size="13" x="800" y="124">
+Delivery_address</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="208" x="750" y="134"/>
+<text font-family="Lucida Grande" font-size="13" x="754" y="149">
+address : String</text>
+<text font-family="Lucida Grande" font-size="13" x="754" y="166">
+city : String</text>
+<text font-family="Lucida Grande" font-size="13" x="754" y="183">
+arrondissement : String</text>
+<text font-family="Lucida Grande" font-size="13" x="754" y="200">
+zip_code : String</text>
+<text font-family="Lucida Grande" font-size="13" x="754" y="217">
+county : String</text>
+<text font-family="Lucida Grande" font-size="13" x="754" y="234">
+country : String</text>
+<polyline fill="none" points="862,398 862,326" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="869" x2="862" y1="338" y2="326"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="855" x2="862" y1="338" y2="326"/>
+<text font-family="Lucida Grande" font-size="13" x="772" y="364">
+is nearby</text>
+<text font-family="Lucida Grande" font-size="13" x="834" y="381">
+0..*</text>
+<text font-family="Lucida Grande" font-size="13" x="841" y="353">
+1</text>
+<polyline fill="none" points="126,110 126,14 14,126 102,126" stroke="#000000" stroke-width="1"/>
+<text font-family="Lucida Grande" font-size="13" x="67" y="98">
+ranks</text>
+<text font-family="Lucida Grande" font-size="13" x="135" y="91">
+0..*</text>
+<text font-family="Lucida Grande" font-size="13" x="65" y="143">
+0..*</text>
+<polyline fill="none" points="774,110 774,70 278,70 278,110" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="271" x2="278" y1="98" y2="110"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="285" x2="278" y1="98" y2="110"/>
+<text font-family="Lucida Grande" font-size="13" x="491" y="51">
+belongs to</text>
+<text font-family="Lucida Grande" font-size="13" x="746" y="93">
+0..*</text>
+<text font-family="Lucida Grande" font-size="13" x="291" y="93">
+1</text>
+</svg>
