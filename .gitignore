@@ -3,3 +3,5 @@
 static/img/.DS_Store
 static/img/src/.DS_Store
 *.zargo~
+/node_modules
+node_modules/

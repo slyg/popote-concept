@@ -1,5 +1,6 @@
 {
-  "version": "0.0.1",
+  "name" : "popote-concept",
+  "version" : "0.0.1",
   "dependencies" : {
     "express"   : "<= 2.5.9",
     "swig"      : ">= 0.11.2"
